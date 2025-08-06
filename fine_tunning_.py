@@ -11,7 +11,7 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 
-df = pd.read_csv("path/to/your/dataset.csv")  
+df = pd.read_csv("dataset_06.csv")  
 print(df.head())
 dataset = Dataset.from_pandas(df)
 
@@ -50,3 +50,4 @@ trainer.train()
 # token: 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
 model.push_to_hub("BeyzaNurYldrmm/06_fine")
 tokenizer.push_to_hub("BeyzaNurYldrmm/06_fine")
+
