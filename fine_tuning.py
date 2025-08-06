@@ -161,3 +161,21 @@ while True:
     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
     print("Model:", response)
+
+from huggingface_hub import create_repo, upload_folder
+
+token = "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" 
+
+create_repo("helin-lora-phi4", repo_type="model", private=False, token=token,exist_ok=True)
+
+upload_folder(
+    repo_id="Helin02/helin-lora-phi4",      
+    folder_path="helin-lora-phi4",          
+    repo_type="model",
+    commit_message="LoRA fine-tuned Phi-4 model",
+    token=token
+)
+commit_message="LoRA fine-tuned Phi-4 model"
+
+   
+    
