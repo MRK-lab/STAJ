@@ -854,19 +854,33 @@
   ""userMessage"": ""Satış müdürü pozisyonunu Kadıköy şubesine ekle""
 }
 "
-##############"{
+"{
   ""fields"": [
     {
       ""name"": ""SmsLimit"",
       ""type"": ""int"",
-      ""required"": false,
-      ""value"": 1000
+      ""required"": true,
+      ""value"": """"
     }
   ],
   ""endpoint"": ""api/CompanySmsLimit/CompanySmsLimitCreate"",
   ""status"": true,
   ""modelMessage"": ""completed"",
   ""userMessage"": ""Şirkete 1000 SMS limiti ekle""
+}
+";"{
+  ""fields"": [
+    {
+      ""name"": ""SmsLimit"",
+      ""type"": ""int"",
+      ""required"": true,
+      ""value"": 1000
+    }
+  ],
+  ""endpoint"": ""api/CompanySmsLimit/CompanySmsLimitCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Şirketinize 1000 SMS limiti eklendi."",
+  ""userMessage"": """"
 }
 "
 "{
@@ -879,19 +893,19 @@
   ],
   ""status"": false,
   ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
-  ""userMessage"": ""Yeni kullanıcı: username mehmet, name Mehmet Yılmaz, profil admin, şifre gizli""
+  ""userMessage"": ""Yeni kullanıcı: username Can, name Mehmet Yılmaz, profil admin, şifre gizli""
 }
 ";"{
   ""fields"": [
-    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": ""mehmet"" },
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": ""Can"" },
     { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Mehmet Yılmaz"" },
     { ""name"": ""Password"", ""type"": ""string"", ""required"": true, ""value"": ""gizli"" },
     { ""name"": ""FkProfile_Name"", ""type"": ""string"", ""required"": true, ""value"": ""admin"" }
   ],
   ""endpoint"": ""api/User/UserCreate"",
   ""status"": true,
-  ""modelMessage"": ""completed"",
-  ""userMessage"": ""Yeni kullanıcı: username mehmet, name Mehmet Yılmaz, profil admin, şifre gizli""
+  ""modelMessage"": ""Yeni kullanıcı eklendi."",
+  ""userMessage"": """"
 }
 "
 "{
@@ -911,8 +925,8 @@
   ],
   ""endpoint"": ""api/Tax/TaxCreate"",
   ""status"": true,
-  ""modelMessage"": ""completed"",
-  ""userMessage"": ""Ahmet isimli sporcunun 1500 vergi tutarını kaydet""
+  ""modelMessage"": ""Ahmet isimli sporcunun 1500 vergi tutarı kaydedildi"",
+  ""userMessage"": """"
 }
 "
 "{
@@ -934,8 +948,8 @@
   ],
   ""endpoint"": ""api/Athlete/AthleteCreate"",
   ""status"": true,
-  ""modelMessage"": ""completed"",
-  ""userMessage"": ""Adı Ali, soyadı Yılmaz ve 2001 doğumlu bir sporcu ekle""
+  ""modelMessage"": ""Sporcu eklendi."",
+  ""userMessage"": """"
 }
 "
 "{
@@ -955,8 +969,8 @@
   ],
   ""endpoint"": ""api/Coach/CoachCreate"",
   ""status"": true,
-  ""modelMessage"": ""completed"",
-  ""userMessage"": ""Veli adlı antrenörü 3 numaralı branşa ata""
+  ""modelMessage"": ""İşlem başarılı."",
+  ""userMessage"": """"
 }
 "
 "{
@@ -976,8 +990,8 @@
   ],
   ""endpoint"": ""api/Organization/OrganizationCreate"",
   ""status"": true,
-  ""modelMessage"": ""completed"",
-  ""userMessage"": ""Vergi numarası 123456 olan A Spor Kulübünü oluştur""
+  ""modelMessage"": ""123456 vergi numarasına sahip A Spor Klübü oluşturuldu."",
+  ""userMessage"": """"
 }
 "
 "{
@@ -999,8 +1013,8 @@
   ],
   ""endpoint"": ""api/Athlete/AthleteCreate"",
   ""status"": true,
-  ""modelMessage"": ""completed"",
-  ""userMessage"": ""Ali Veli isimli sporcuyu 2001-05-20 doğum tarihiyle ekle""
+  ""modelMessage"": ""Ali Veli sporcu eklendi."",
+  ""userMessage"": """"
 }
 "
 "{
@@ -1020,8 +1034,8 @@
   ],
   ""endpoint"": ""api/Organization/OrganizationCreate"",
   ""status"": true,
-  ""modelMessage"": ""completed"",
-  ""userMessage"": ""Vergi numarası 1234567890 olan Alfa Ltd. şirketini ekle""
+  ""modelMessage"": ""Vergi numarası 1234567890 olan Alfa Ltd. şirketini eklendi"",
+  ""userMessage"": """"
 }
 "
 "{
@@ -1043,8 +1057,8 @@
   ],
   ""endpoint"": ""api/User/UserCreate"",
   ""status"": true,
-  ""modelMessage"": ""completed"",
-  ""userMessage"": ""kullanıcı adı ayse_01, email ayse@example.com ve şifre 123456 ile kullanıcı oluştur""
+  ""modelMessage"": ""ayse_01 kişisi eklendi."",
+  ""userMessage"": """"
 }
 "
 "{
@@ -1071,7 +1085,7 @@
   ],
   ""status"": false,
   ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
-  ""userMessage"": ""2025 Mayıs ayında Atletizm Turnuvası ekle""
+  ""userMessage"": ""2025 Mayıs ayının 1'ine Atletizm Turnuvası ekle""
 }
 ";"{
   ""fields"": [
@@ -1096,8 +1110,9 @@
   ],
   ""endpoint"": ""api/Competition/Create"",
   ""status"": true,
-  ""modelMessage"": ""completed"",
-  ""userMessage"": ""2025 Mayıs ayında Atletizm Turnuvası ekle""
+  ""modelMessage"": ""Turnuva eklendi."",
+  ""userMessage"": """"
 }
 "
+
 
