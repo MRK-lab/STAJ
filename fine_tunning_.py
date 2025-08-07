@@ -27,11 +27,6 @@ def preprocess_function(examples):
 # Tokenize etme işlemi
 tokenized_dataset = dataset.map(preprocess_function, batched=True)
 
-
-def tokenize_function(examples):
-    return tokenizer(examples["input"].tolist(), padding="max_length", truncation=True, return_tensors="pt")
-
-tokenized_data = tokenize_function(df)
 training_args = TrainingArguments(
     output_dir="./results",
     evaluation_strategy='epochs',
@@ -50,4 +45,5 @@ trainer.train()
 # token: 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
 model.push_to_hub("BeyzaNurYldrmm/06_fine")
 tokenizer.push_to_hub("BeyzaNurYldrmm/06_fine")
+
 
